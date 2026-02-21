@@ -1,53 +1,179 @@
-# LMS-ADT-CaseStudy
+# 🎓 E-Learning & Course Recommendation
 
-A small Learning Management System (LMS) case study implemented using custom ADTs (Trie, Graph, Heap, Queue, HashMap, Dynamic Array) in Python. The project demonstrates how core data structures can be combined to build features like course dependency management, content search/autocomplete, scheduling, recommendation, and student progress tracking.
+A Data Structures based adaptive Learning Management System (LMS) built in Python that intelligently manages courses, student progress, prerequisites, content search, and personalized course recommendations.
 
-## Features
+---
 
-- Course dependency graph with topological sorting and prerequisite checks
-- Content Trie for fast prefix-based search / autocomplete
-- Recommendation heap for priority-based course suggestions and popularity tracking
-- Sequence queue for course scheduling and priority management
-- Student hash map and history array for tracking student progress and activities
-- A `Main.py` integrating these ADTs into a simple CLI-style LMS
+## 📌 Project Overview
 
-## Project structure
+**E-Learning & Course Recommendation** is a console-based academic project that demonstrates the practical integration of multiple core Data Structures into a real-world learning platform.
 
-- `ContentTrie.py` - Trie implementation for course content and autocomplete
-- `CourseGraph.py` - Directed graph for courses and prerequisites
-- `RecommadationHeap.py` - Heap for course recommendations and popularity
-- `SequenceQueue.py` - Circular queue for scheduling sequences
-- `StudentHashMap.py` - Hash map and `Student` model
-- `StudentHistoryArray.py` - Activity history storage for students
-- `Main.py` - Integrates components into an interactive CLI-style system
-- `TestCases.py` - Example test cases demonstrating functionality
+The system allows:
 
-## Requirements
+- Course prerequisite validation
+- Intelligent content search
+- Personalized course recommendations
+- Student progress tracking
+- Learning path generation
+- Dynamic course scheduling
+- Activity history monitoring
 
-- Python 3.8+
+This project highlights how fundamental Data Structures can power a scalable educational system.
 
-## Quick start
+---
 
-1. Create a virtual environment and activate it:
+## 🧠 Core Data Structures Used
 
-```powershell
-python -m venv venv
-.\venv\Scripts\Activate.ps1   # PowerShell on Windows
+| Data Structure | File | Purpose |
+|---------------|------|----------|
+| Trie | `ContentTrie.py` | Fast keyword-based content search |
+| Graph | `CourseGraph.py` | Course prerequisite management |
+| HashMap | `StudentHashMap.py` | Efficient student record storage |
+| Dynamic Array | `StudentHistoryArray.py` | Student activity tracking |
+| Min-Heap | `RecommadationHeap.py` | Priority-based course recommendation |
+| Queue | `SequenceQueue.py` | Course sequence scheduling |
+
+---
+
+## 🚀 Key Features
+
+### 👨‍🎓 Student Features
+- Student registration & login
+- Learning style preference selection
+- Course enrollment with prerequisite validation
+- Automatic learning path generation
+- Quiz score tracking
+- Progress analytics dashboard
+- Personalized course recommendations
+
+### 👨‍💼 Admin Features
+- Add new courses
+- Add content to courses
+- Manage course priorities
+- View system statistics
+- Monitor student data
+
+### 🔎 Smart Search
+- Prefix-based autocomplete using Trie
+- Efficient content lookup in **O(m)** time
+
+### 🎯 Intelligent Recommendation System
+- Uses Min-Heap
+- Recommends courses based on:
+  - Progress
+  - Completion history
+  - Popularity trends
+
+---
+
+## 🏗️ Project Structure
+
+```
+E-Learning-Course-Recommendation/
+│
+├── ContentTrie.py
+├── CourseGraph.py
+├── StudentHashMap.py
+├── StudentHistoryArray.py
+├── SequenceQueue.py
+├── RecommadationHeap.py
+├── Main.py
+├── TestCases.py
+│
+├── README.md
+└── .gitignore
 ```
 
-2. Run the tests / example flows:
+---
 
-```powershell
-python "Case Study/TestCases.py"
-# or run the interactive main
-python "Case Study/Main.py"
+## ▶️ How to Run the Project
+
+### 1️⃣ Clone the Repository
+
+```
+git clone https://github.com/your-username/E-Learning-Course-Recommendation.git
 ```
 
-Note: The project uses only the Python standard library.
+### 2️⃣ Navigate into the Folder
 
-## License
+```
+cd E-Learning-Course-Recommendation
+```
 
-This project has no license specified. Add a LICENSE file if you wish to publish it.
+### 3️⃣ Run the Application
 
---
-Generated README for the LMS ADT Case Study
+```
+python Main.py
+```
+
+---
+
+## 🧪 Run Test Suite (Faculty Demonstration Mode)
+
+```
+python TestCases.py
+```
+
+The test suite demonstrates:
+
+1. Prerequisite validation
+2. Learning path generation
+3. Trie-based search efficiency
+4. Recommendation engine intelligence
+5. Progress tracking analytics
+6. Scheduling system functionality
+
+---
+
+## ⏱️ Time Complexity Highlights
+
+| Operation | Complexity |
+|-----------|------------|
+| Student Insert | O(1) |
+| Student Retrieval | O(1) |
+| Trie Search | O(m) |
+| Graph Traversal | O(V + E) |
+| Heap Insert | O(log n) |
+| Queue Operations | O(1) |
+
+---
+
+##  Learning Outcomes
+
+This project demonstrates:
+
+- Practical application of Data Structures
+- System design using modular architecture
+- Algorithm optimization techniques
+- Efficient time and space complexity management
+- Real-world integration of multiple ADTs
+
+---
+
+##  Why This Project is Strong
+
+- Integrates 6+ Data Structures in one system
+- Demonstrates algorithmic thinking
+
+---
+
+## Technologies Used
+
+- Python 3.x
+- Standard Library Modules
+- OOP Concepts
+- Algorithm Design
+
+---
+
+##  Author
+
+Somisetty Veda Sai
+Computer Science Engineering   
+Data Structures Algorithm Project  
+
+---
+
+## 📜 License
+
+This project is created for academic and educational purposes.
